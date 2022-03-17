@@ -57,7 +57,7 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Project made for studies using my first array based project with NestJS (<a href='https://github.com/jguibrandao/Estudando-NestJs/tree/master/src'>link</a>)
+Project made for studies using by start my first array based project with NestJS (<a href='https://github.com/jguibrandao/Estudando-NestJs/tree/master/src'>link</a>)
 
 ### Built With
 
