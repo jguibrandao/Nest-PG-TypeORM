@@ -63,6 +63,7 @@ Project made for studies using by start my first array based project with NestJS
 
 This section should list any major frameworks that you built your project using.
 * [Postgresql]
+* [Docker postgres container]
 * [NestJS]
 * [TypeScript]
 * [Design Patterns]
