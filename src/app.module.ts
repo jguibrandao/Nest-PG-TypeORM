@@ -8,7 +8,7 @@ import { CoursesModule } from './courses/courses.module';
   imports: [CoursesModule, TypeOrmModule.forRoot({ 
     type: 'postgres',
     host: 'localhost',
-    port: 5432,
+    port: 5000,
     username: 'postgres',
     password: 'docker',
     database: 'postgres',
