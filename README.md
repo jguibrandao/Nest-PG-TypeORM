@@ -98,7 +98,10 @@ This is an example of how to list things you need to use the software and how to
    ```sh
    https://nestjs.com/
    ```
-
+4. Sett your postgres db (here im using a docker container)
+   ```sh
+   https://www.postgresql.org/
+   ```
 
 
 <!-- USAGE EXAMPLES -->
