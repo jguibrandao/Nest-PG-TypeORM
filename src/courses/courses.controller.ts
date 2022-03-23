@@ -20,19 +20,19 @@ export class CoursesController {
 
     @Post()
     create(@Body() createCourseDto: CreateCourseDto): any {
-        this.coursesService.create(createCourseDto)
+        return this.coursesService.create(createCourseDto)
     }
 
     @Patch(':id')
     update(
         @Param('id') id: string,
         @Body() updateCourseDto: UpdateCourseDto
-        ): any {
-         this.coursesService.update(id, updateCourseDto)   
+        ) {
+         return this.coursesService.update(id, updateCourseDto)   
     }
 
     @Delete(':id')
-    delete(@Param('id') id: string): void {
-         this.coursesService.delete(id)  
+    delete(@Param('id') id: string) {
+        return this.coursesService.delete(id)  
     }
 }
