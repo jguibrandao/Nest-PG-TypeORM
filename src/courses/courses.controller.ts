@@ -9,12 +9,12 @@ export class CoursesController {
     constructor(private readonly coursesService: CoursesService) {}
 
     @Get('list')
-    findAll(): Course[] {
+    findAll() {
         return this.coursesService.findAll()
     }
 
     @Get(':id')
-    findOne(@Param('id') id: string): Course {
+    findOne(@Param('id') id: string) {
         return this.coursesService.findOne(id)
     }
 
