@@ -16,10 +16,10 @@ export class CoursesService {
         return this.courseRepository.find()
     }
 
-    findOne(id: any) {
-        const course = this.courseRepository.findOne(id)
-
-        if (!course) {
+    async findOne(id: any) {
+        const course = await this.courseRepository.findOneBy({ id: id })
+        console.log(course)
+        if (!course || course == null) {
             throw new NotFoundException()
         }
 
@@ -45,9 +45,9 @@ export class CoursesService {
     }
 
     async delete(id: any) {
-        const course = await this.courseRepository.findOne(id)
+        const course = await this.courseRepository.findOneBy({ id: id })
 
-        if(!course) {
+        if(!course || course === null) {
             throw new NotFoundException()
         }
 
